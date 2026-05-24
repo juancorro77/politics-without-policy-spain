@@ -12,6 +12,23 @@ The primary unit of analysis is the **Speech Unit (UD)**, which corresponds to a
 3.  **MP Turn 2**: Replica.
 4.  **Minister Turn 2**: Duplica (final turn).
 
+### 1.1 Data Scope and Boundaries (Inclusion & Exclusion Criteria)
+
+To ensure consistency and comparability, the dataset has strict inclusion and exclusion boundaries:
+
+*   **Inclusion Criteria**:
+    *   **Initiative Type**: Only oral questions (*Preguntas Orales en Pleno*, identified by the `180/` prefix on the metadata) debated during the weekly government control sessions (*Sesiones de control al Gobierno*).
+    *   **Venue**: Debates must have taken place on the floor of the Plenary of the Congress of Deputies (*Pleno del Congreso*), typically during Wednesday morning sessions.
+    *   **Legislative Period**: Only questions from the XIV (2019-2023) and XV (2023-Present) Legislatures are included.
+    *   **Content**: Only completed debates with transcribed speeches of the MP and the responding Minister.
+
+*   **Exclusion Criteria**:
+    *   **Written Questions**: Written questions (*Preguntas escritas*, which comprise the vast majority of parliamentary questions in Spain) are excluded because they are administrative and do not involve oral debates on the floor.
+    *   **Urgent Interpellations**: Urgent interpellations (*Interpelaciones urgentes*) are excluded. Although they occur in the Plenary and serve a control function, they follow a longer debate format (10-15 minutes per side) and lead to motions, which would compromise the consistent 2.5-minute time frame of the questions.
+    *   **Appearances/Hearings**: Appearances of the Prime Minister or ministers (*Comparecencias del Gobierno*) before the Plenary or Committees are excluded.
+    *   **Legislative Debates**: Debates on bills, amendments, or budgets are excluded.
+    *   **Committee Control**: Any control debates or questions held in sectorial legislative committees (*Comisiones*) are excluded.
+
 ---
 
 ## 2. Variables and Operationalization
