@@ -107,6 +107,26 @@ def classify_text_by_keywords(text):
     else:
         return "ambiguous"
 
+def classify_with_llm(model, sentence):
+    prompt = (
+        "Clasifica la siguiente oración de un debate parlamentario español como "
+        "'policy' (gestión, políticas públicas, datos, plazos) o 'politics' "
+        "(confrontación partidista, amnistía, corrupción, alianzas de poder).\n"
+        "Responde únicamente con una palabra: 'policy' o 'politics'.\n\n"
+        f"Oración: \"{sentence}\"\n"
+        "Respuesta:"
+    )
+    try:
+        response = model.generate_content(prompt)
+        result = response.text.strip().lower()
+        if "policy" in result:
+            return "policy"
+        elif "politics" in result:
+            return "politics"
+    except Exception as e:
+        print(f"Error en llamada a API de Gemini: {e}")
+    return "ambiguous"
+
 def main():
     parser = argparse.ArgumentParser(description="Analyze Spain Congress control debates")
     parser.add_argument("--key", type=str, default=None, help="Gemini API Key")
@@ -125,12 +145,14 @@ def main():
     
     api_key = args.key or os.environ.get("GEMINI_API_KEY")
     use_llm = False
+    model = None
     
     # Check if google-generativeai is installed and key is present
     if api_key:
         try:
             import google.generativeai as genai
             genai.configure(api_key=api_key)
+            model = genai.GenerativeModel('gemini-1.5-flash')
             use_llm = True
             print("Clasificador LLM Gemini ACTIVO.")
         except ImportError:
@@ -209,13 +231,15 @@ def main():
                 sent_class = classify_text_by_keywords(sent)
                 
                 if sent_class == "ambiguous":
-                    # If LLM is active, we collect it. Otherwise, we do advanced local fallback:
-                    # Heuristic: inherit the classification of the manifest question or local context
-                    # If it has general policy stems, it's policy, else politics
-                    if any(w in sent.lower() for w in ['euros', 'millon', 'ley', 'gestio', 'plaz', 'proyect', 'invers', 'presupuest']):
-                        sent_class = "policy"
-                    else:
-                        sent_class = "politics"
+                    # If LLM is active, call Gemini. Otherwise, run advanced local heuristic fallback:
+                    if use_llm:
+                        sent_class = classify_with_llm(model, sent)
+                        
+                    if sent_class == "ambiguous":
+                        if any(w in sent.lower() for w in ['euros', 'millon', 'ley', 'gestio', 'plaz', 'proyect', 'invers', 'presupuest']):
+                            sent_class = "policy"
+                        else:
+                            sent_class = "politics"
                         
                 if sent_class == "policy":
                     if is_deputy:
