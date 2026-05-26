@@ -84,9 +84,11 @@ For the subset of policy-focused questions that were successfully debated on the
 | **Mean Agenda Shift Rate (ASR)** | **69.2%** | **71.8%** | ▲ Increase (+2.6%) |
 | **Mean Minister Evasion Rate (ER)** | **71.6%** | **69.2%** | ▼ Decrease (-2.4%) |
 
-The data strongly support **Hypothesis 1 (H1)** and **Hypothesis 2 (H2)**:
-*   **ASR is consistently above 69%**: Out of every ten sentences spoken in a debate meant to address a public service (housing, infrastructure, water), approximately seven are spent arguing over partisan corruption, territorial agreements, or political legitimacy.
-*   **ER is close to 70%**: Ministers evade accountability by dedicating the vast majority of their time to counter-attacking the opposition or deflecting blame, leaving only 30% of their speech units for the substantive question.
+***
+*`[Figure 1 about here: Distribution of Deliberative Scrutiny Metrics by Legislature]`*
+***
+
+The data strongly support **Hypothesis 1 (H1)** and **Hypothesis 2 (H2)**. As illustrated by the violin and boxplots in Figure 1, these high averages are not driven by outlier debates; rather, the distribution density of both ASR and ER is heavily concentrated between 60% and 100%. This density confirms that the crowding out of policy and ministerial avoidance of accountability are systematic, day-to-day characteristics of oral Q&A sessions.
 
 Furthermore, the data support **Hypothesis 3 (H3)**: ASR rose from 69.2% to 71.8% in the XV Legislature, reflecting the growing polarization of the current legislative term.
 
@@ -106,7 +108,11 @@ The strategic use of parliamentary questions varies significantly across parliam
 | **GJxCAT (Junts)** | 10 | 69.6% | 64.2% |
 | **GPlu (Plural / BNG / Compromís)** | 7 | 60.8% | 65.7% |
 
-The two main opposition groups—GP (Partido Popular) and GVOX—provoke the highest Agenda Shift and Evasion Rates. Their questions, even when registered under technical policy titles, are heavily loaded with partisan frames, which in turn triggers highly defensive, politics-focused responses from the ministers (with ER reaching 76.7% and 78.7% respectively). Conversely, minority regionalist groups (such as GPlu) exhibit lower ASR (60.8%), indicating a more localized, policy-focused approach to executive control.
+***
+*`[Figure 2 about here: Strategic Conflict Map - Party Positioning in Policy Control]`*
+***
+
+The two main opposition groups—GP (Partido Popular) and GVOX—provoke the highest Agenda Shift and Evasion Rates. As visualized in the Strategic Conflict Map (Figure 2), these groups cluster in the upper-right quadrant of maximum confrontation and evasion. Their questions, even when registered under technical policy titles, are heavily loaded with partisan frames, which in turn triggers highly defensive, politics-focused responses from the ministers (with ER reaching 76.7% and 78.7% respectively). Conversely, minority regionalist groups (such as GPlu) fall into the lower-left quadrant, exhibiting lower ASR (60.8%), indicating a more localized, policy-focused approach to executive control.
 
 ---
 
