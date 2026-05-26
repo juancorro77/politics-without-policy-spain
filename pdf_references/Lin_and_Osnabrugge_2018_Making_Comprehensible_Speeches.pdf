@@ -1,0 +1,1828 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8e44ad">
+    <meta name="description" content="We present ALMA observations of the mid-J 12CO emission from six single-dish selected 870-μm sources in the Extended Chandra Deep Field-South and UKIDSS Ul..." />
+
+    <meta name="robots" content="noarchive">
+
+    <!-- Google Scholar start -->
+
+            <meta name="citation_title" content="An ALMA survey of CO in submillimetre galaxies: companions, triggering, and the environment in blended sources">
+    
+            <meta name="citation_abstract" lang="en" content="We present ALMA observations of the mid-J 12CO emission from six single-dish selected 870-μm sources in the Extended Chandra Deep Field-South and UKIDSS Ultra-Deep Survey fields. These six single-dish submillimetre sources were selected based on previous ALMA continuum observations, which showed that each comprised a blend of emission from two or more individual submillimetre galaxies (SMGs), separated on 5–10 arcsec scales. The six single-dish submillimetre sources targeted correspond to a total of 14 individual SMGs, of which seven have previously measured robust optical/near-infrared spectroscopic redshifts, which were used to tune our ALMA observations. We detect CO(3–2) or CO(4–3) at z = 2.3–3.7 in 7 of the 14 SMGs, and in addition serendipitously detect line emission from three gas-rich companion galaxies, as well as identify four new 3.3 mm selected continuum sources in the six fields. Joint analysis of our CO spectroscopy and existing data suggests that 64(±18)percent of the SMGs in blended submillimetre sources are unlikely to be physically associated. However, three of the SMG fields (50 per cent) contain new, serendipitously detected CO-emitting (but submillimetre-faint) sources at similar redshifts to the 870 μm selected SMGs we targeted. These data suggest that the SMGs inhabit overdense regions, but that these are not sufficiently overdense on ∼100 kpc scales to influence the source blending given the short lifetimes of SMGs. We find that 21±12percent of SMGs have spatially distinct and kinematically close companion galaxies (∼8–150 kpc and ≲ 300 km s−1), which may have enhanced their star formation via gravitational interactions.">
+    
+            <meta name="citation_author" content="Wardlow, J.L.">
+            <meta name="citation_author" content="Simpson, J.M.">
+            <meta name="citation_author" content="Smail, Ian">
+            <meta name="citation_author" content="Swinbank, A.M.">
+            <meta name="citation_author" content="Blain, A.W.">
+            <meta name="citation_author" content="Brandt, W.N.">
+            <meta name="citation_author" content="Chapman, S.C.">
+            <meta name="citation_author" content="Chen, Chian-Chou">
+            <meta name="citation_author" content="Cooke, E.A.">
+            <meta name="citation_author" content="Dannerbauer, H.">
+            <meta name="citation_author" content="Gullberg, B.">
+            <meta name="citation_author" content="Hodge, J.A.">
+            <meta name="citation_author" content="Ivison, R.J.">
+            <meta name="citation_author" content="Knudsen, K.K.">
+            <meta name="citation_author" content="Scott, Douglas">
+            <meta name="citation_author" content="Thomson, A.P.">
+            <meta name="citation_author" content="Weiß, A.">
+            <meta name="citation_author" content="van der Werf, P.P.">
+    
+                        <meta name="citation_online_date" content="2018/06/14">
+                    <meta name="citation_publication_date" content="2018/09/21">
+                    <meta name="citation_cover_date" content="2018/06/14">
+            
+            <meta name="citation_journal_title" content="Monthly Notices of the Royal Astronomical Society">
+    
+            <meta name="citation_volume" content="479">
+    
+            <meta name="citation_issue" content="3">
+    
+            <meta name="citation_doi" content="10.1093/mnras/sty1526">
+    
+            <meta name="citation_publisher" content="Royal Astronomical Society">
+    
+            <meta name="citation_issn" content="0035-8711" />
+    
+            <meta name="citation_issn" content="1365-2966" />
+    
+    <meta name="citation_public_url" content="https://durham-repository.worktribe.com/output/1321971" />
+    <meta name="citation_abstract_html_url" content="https://durham-repository.worktribe.com/output/1321971.abstract" />
+
+                                        <meta name="citation_pdf_url" content="https://durham-repository.worktribe.com/preview/1322051/25983.pdf">
+                        
+            <meta name="citation_article_type" content="Journal Article" />
+    
+    <!-- Google Scholar end -->
+
+    <title>An ALMA survey of CO in submillimetre galaxies: companions, triggering, and the environment in blended sources</title>
+
+    <link rel="stylesheet" href="/css/surface.min.css?a=a" />
+    <link rel="stylesheet" href="/css/app.css?a=d" />
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+
+            <link href="/css/irus_r5_widget.css" rel="stylesheet">
+
+        <style>
+            #irus_widget_container {
+                font-family: "Muli","Helvetica Neue",Arial,sans-serif;
+            }
+            #irus_widget_form {
+                background-color: #f9f5fb;
+                padding: 2em;
+            }
+            #irus_widget_form > div {
+                margin-bottom: 5px;
+            }
+        </style>
+    
+    
+            <link rel="stylesheet" href="/css/skins/Durham.css?a=b" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <script src="/js/sheetjs/assets/js/xlsx.full.min.js"></script>
+    <script src="/js/sheetjs/assets/vendor/spin.js"></script>
+    <script src="/js/sheetjs/assets/js/canvas-datagrid.js"></script>
+    <script src="/js/repository.js"></script>
+    <script defer src="/js/modal.js"></script>
+</head>
+<body>
+
+
+<a class="skip-main" href="#main">Skip to main content</a>
+
+<nav class="navbar is-dark" data-turbolinks-permanent role="navigation" aria-label="Navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" id="logo" data-turbolinks="false" href="https://durham-repository.worktribe.com">
+            <img height="15em" style="width:110px;" src="/img/logo_worktribe_black_704.png" alt="Durham Research Online (DRO)" title="2.0.185">
+        </a>
+        
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        
+        <div class="navbar-start">
+            <a class="navbar-item " href="https://durham-repository.worktribe.com">
+                Home
+            </a>
+
+                            <a class="navbar-item " href="https://durham-repository.worktribe.com/outputs">
+                    Research Outputs
+                </a>
+            
+                            <a class="navbar-item " href="https://durham-repository.worktribe.com/people">
+                    People
+                </a>
+            
+                            <a class="navbar-item " href="https://durham-repository.worktribe.com/organisations">
+                    Faculties and Departments
+                </a>
+            
+            
+                                            
+                                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="https://durham-repository.worktribe.com/researchcentres">
+                            Research Centres/Groups
+                        </a>
+                        <div class="navbar-dropdown ">
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599308">
+                                    Advanced Materials and Electronic Devices
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599286">
+                                    Aesthetics, Ethics and Politics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599304">
+                                    Algorithms and Complexity in Durham (ACiD)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599294">
+                                    Animal Cells and Systems
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599326">
+                                    Anthropology of Health
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599316">
+                                    Applied and Computational Mathematics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599358">
+                                    Artificial Intelligence and Human Systems (AIHS)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599321">
+                                    Behaviour, Ecology and Evolution Research Centre (BEER)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599329">
+                                    Bioarchaeology
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599309">
+                                    Bioengineering
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599295">
+                                    Biomolecular Interactions
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599183">
+                                    Biophysical Sciences Institute (BSI)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599340">
+                                    Catchments and Rivers
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599242">
+                                    Centre for Advanced Instrumentation
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599201">
+                                    Centre for Banking Institutions and Development
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599259">
+                                    Centre for Catholic Studies
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599226">
+                                    Centre for Chinese Law and Policy
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599216">
+                                    Centre for Classical Reception
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/3481668">
+                                    Centre for Classics Education Research and Engagements
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599367">
+                                    Centre for Comparative Modernities
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599365">
+                                    Centre for Consumers and Sustainable Consumption
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599251">
+                                    Centre for Contemporary Chinese Studies
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599227">
+                                    Centre for Criminal Law and Criminal Justice
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599238">
+                                    Centre for Culture and Ecology
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599260">
+                                    Centre for Death and Life Studies
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/5082957">
+                                    Centre for Environment and Humanities
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599202">
+                                    Centre for Environmental and Energy Economics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599228">
+                                    Centre for Ethics and Law in the Life Sciences
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599203">
+                                    Centre for Experimental Methods and Behavioural Research
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599243">
+                                    Centre for Extragalactic Astronomy
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599215">
+                                    Centre for Global Infectious Disease
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599241">
+                                    Centre for Humanities Engaging Science and Society
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599252">
+                                    Centre for Institutions and Political Behaviour
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599239">
+                                    Centre for Intercultural Mediation
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599229">
+                                    Centre for Law and Global Justice
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599204">
+                                    Centre for Leadership and Followership
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599205">
+                                    Centre for Macroeconomic Policy
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599244">
+                                    Centre for Materials Physics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599223">
+                                    Centre for Modern Conflicts and Cultures
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599221">
+                                    Centre for Molecular and Nanoscale Electronics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599248">
+                                    Centre for Neurodiversity &amp; Development
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599240">
+                                    Centre for Nineteenth-Century Studies
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599206">
+                                    Centre for Organisations and Society
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599237">
+                                    Centre for Particle Theory
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599253">
+                                    Centre for Political Thought
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599207">
+                                    Centre for Quantitative Research in Financial Economics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2979189">
+                                    Centre for Research into Inner Experience
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/4817129">
+                                    Centre for Research into Inner Experience (CRIE)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599255">
+                                    Centre for Research into Violence and Abuse
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599256">
+                                    Centre for Social Justice and Community Action
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599208">
+                                    Centre for Strategy, Technological Innovation and Operations
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599230">
+                                    Centre for Sustainable Development Law and Policy
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599250">
+                                    Centre for Vision and Visual Cognition
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599197">
+                                    Centre for Visual Arts and Cultures
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599196">
+                                    Centre for the Ethics of Cultural Heritage
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599265">
+                                    Centre for the History of Medicine and Disease
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599195">
+                                    Centre for the Study of Jewish Culture, Society and Politics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/3482073">
+                                    Centre for the Study of Ukraine
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599217">
+                                    Centre for the Study of the Ancient Mediterranean and Near East
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599305">
+                                    Climate, Environment and Resources
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599323">
+                                    Cognitive Neuroscience
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599310">
+                                    Communications and THz
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599351">
+                                    Communities and Social Justice
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599311">
+                                    Computational Mechanics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599322">
+                                    Condensed Matter Physics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599352">
+                                    Criminal Justice, Social Harms and Inequalities
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/4812454">
+                                    DU Space Research Centre (SPARC)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599274">
+                                    Decolonising MLAC
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599324">
+                                    Developmental Science
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599257">
+                                    Durham Arctic Research Centre for Training and Interdisciplinary Collaboration
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599218">
+                                    Durham Centre for Ancient and Medieval Philosophy
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599200">
+                                    Durham Centre for Crop Improvement Technology
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599236">
+                                    Durham Centre for Law and Philosophy
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599245">
+                                    Durham Centre for Soft Matter
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599194">
+                                    Durham Cultural Evolution Research Centre
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599185">
+                                    Durham Energy Institute (DEI)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599366">
+                                    Durham Enterprise Centre
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599231">
+                                    Durham European Law Institute
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599219">
+                                    Durham Geochemistry Centre
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599192">
+                                    Durham Infancy and Sleep Centre
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599232">
+                                    Durham International Dispute Resolution Institute
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599191">
+                                    Durham Research Methods Centre (DRMC)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599209">
+                                    Durham Research in Economic Analysis and Mechanisms
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599220">
+                                    Durham University Evidence Centre for Education
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599246">
+                                    Durham X-Ray Centre
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599296">
+                                    Ecology, Evolution and Environment
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599266">
+                                    Economic and Social History
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599341">
+                                    Economy &amp; Culture
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599210">
+                                    El Shaarani Centre for Ethical Finance, Accountability and Governance
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599312">
+                                    Electrical Power
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599369">
+                                    Environmental
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599327">
+                                    Evolutionary Anthropology
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599313">
+                                    Fluid Mechanics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599233">
+                                    Gender and Law at Durham
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599370">
+                                    Geochemistry
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599342">
+                                    Geographies of Life
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599371">
+                                    Geophysics &amp; Geodynamics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599314">
+                                    Geotechnical and Environmental Engineering
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/4817127">
+                                    Global Centre for Contextual Safeguarding (GCCS)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599254">
+                                    Global Policy Institute
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599212">
+                                    Global Studies Centre
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599343">
+                                    Hazards and Surface Change
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599353">
+                                    Health and Social Theory
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/4817121">
+                                    Heritage 360 (H360)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599330">
+                                    Heritage Partnerships
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599354">
+                                    Higher education and social inequality
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599268">
+                                    History of Science, Technology and Medicine
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599234">
+                                    Human Rights and Public Law Centre
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599225">
+                                    IBRU Centre for Borders Research
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599235">
+                                    Institute for Commercial and Corporate Law
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599184">
+                                    Institute for Computational Cosmology (ICC)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599189">
+                                    Institute for Data Science (IDAS)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599211">
+                                    Institute for Local Governance
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599188">
+                                    Institute for Medical Humanities (IMH)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599187">
+                                    Institute for Particle Physics Phenomenology (IPPP)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599182">
+                                    Institute of Advanced Study (IAS)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599186">
+                                    Institute of Hazard, Risk and Resilience (IHRR)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599363">
+                                    Institute of Medieval and Early Modern Studies (IMEMS)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599348">
+                                    International Politics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/4817105">
+                                    Just Transitions to a Net Zero World (JusTN0W)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599269">
+                                    Landscape and Environment
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599331">
+                                    Landscapes of Complex Society
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599249">
+                                    Learning and Memory Processes Centre (LAMP)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599332">
+                                    Material and Visual Culture
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599317">
+                                    Mathematical and Theoretical Particle Physics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599288">
+                                    Mind, Language and Metaphysics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599297">
+                                    Molecular Plant Sciences
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599282">
+                                    Music &amp; Science
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599359">
+                                    Network Engineering, Science and Theory in Durham (NESTiD)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599333">
+                                    Northern Communities
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599372">
+                                    Paleoclimate
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599373">
+                                    Paleoecosystems
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599338">
+                                    Pedagogy and Curriculum
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599360">
+                                    Pedagogy in Computer Science (PICS)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599307">
+                                    Physics and Chemistry of Earth and Planetary Processes
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599349">
+                                    Political Economy
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599344">
+                                    Politics-State-Space
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599318">
+                                    Probability
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599339">
+                                    Psychology &amp; Education
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599319">
+                                    Pure Mathematics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599325">
+                                    Quantitative Social Psychology
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599247">
+                                    Quantum Light and Matter
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599376">
+                                    Renewable Energy
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599361">
+                                    Scientific Computing (SciComp)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599345">
+                                    Sea Level, Ice and Climate
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599374">
+                                    Sedimentology
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599328">
+                                    Social Anthropology
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599303">
+                                    Soft Matter and Interfaces
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/4817095">
+                                    Soil and Microbiome Augmentation and Restoration Technologies Lab (SMART)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599320">
+                                    Statistics
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599222">
+                                    The Centre for Communications Systems
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599377">
+                                    The Institute for Middle Eastern and Islamic Studies
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599213">
+                                    The International Centre of Public Accountability
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599264">
+                                    The Michael Ramsey Centre for Anglican Studies
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599315">
+                                    Thermal Energy Systems
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599271">
+                                    Thinking East Asia
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599278">
+                                    Translating Languages and Cultures
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599279">
+                                    Transnational Cinema
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599272">
+                                    Transnational History
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599346">
+                                    Urban Worlds
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599355">
+                                    Violence and Abuse
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599362">
+                                    Vision, Imaging and Visualisation in Durham (VIViD)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599375">
+                                    Volcanology
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599364">
+                                    Wolfson Research Institute (WRI)
+                                </a>
+                                                            <a data-turbolinks="false" class="navbar-item" href="https://durham-repository.worktribe.com/researchcentre/2599198">
+                                    Zurbarán Centre for Spanish and Latin American Art
+                                </a>
+                                                    </div>
+                    </div>
+                            
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="#">
+                    Browse
+                </a>
+                <div class="navbar-dropdown ">
+                    <a class="navbar-item" href="https://durham-repository.worktribe.com/years">
+                        By Year
+                    </a>
+                    <a class="navbar-item" href="https://durham-repository.worktribe.com/authors">
+                        By Author
+                    </a>
+                    <a class="navbar-item" href="https://durham-repository.worktribe.com/types">
+                        By Type
+                    </a>
+                </div>
+            </div>
+
+                            <a class="navbar-item " href="https://durham-repository.worktribe.com/statistics">
+                    Download Statistics
+                </a>
+                    </div>
+        
+        <div class="navbar-end">
+            <a class="navbar-item js-modal-trigger" data-target="about" data-focus="about" href="#" onclick="event.preventDefault();">About</a>
+
+            <a data-turbolinks="false" class="navbar-item" href="/oaiprovider?verb=Identify">
+                OAI
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+<header class="hero is-primary is-bold">
+
+    <div class="hero-body">
+        <div class="container">
+
+            <div id="mc_embed_signup" class="columns is-vcentered">
+
+                                    <div class="column is-one-quarter is-left orglogo">
+                        <a href="">
+                            <img style="max-height: 150px; justify-content: center;" src="/img/logos/2029_DU__Research Online_white_transparent.png" alt="Durham Logo">
+                        </a>
+                    </div>
+                
+                <div class="column">
+
+                                            <div class="repotitle">
+                            <p class="title">Research <strong>Repository</strong></p>
+                        </div>
+                    
+                    <form action="https://durham-repository.worktribe.com/search" method="post" class="validate">
+
+                        <input type="hidden" name="_token" value="YPgUhWIn0leZ6SSUKdirZuJDdUKkuZkJqdZDe2H8" autocomplete="off">
+                        <div class="field has-addons">
+                            <p class="control">
+                            <span class="select">
+                                <select name="type" aria-label="Search Type">
+                                    <option value="all">All</option>
+                                    <option value="output">Output</option>
+                                    <option value="person">Person</option>
+                                    <option value="project">Project</option>
+                                </select>
+                            </span>
+                            </p>
+                            <p class="control is-expanded">
+                                <input class="input" type="text" name="search" placeholder="What are you looking for today?" aria-label="Search" required>
+                            </p>
+                            <p class="control">
+                                <button class="button search-button" aria-label="Search">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </p>
+                        </div>
+                        <span id="advanced">
+                            <a 
+                                href="#"
+                                class="js-modal-trigger" 
+                                data-target="advanced-search" 
+                                data-focus="advanced-search"
+                                onclick="return false;"
+                            >
+                                <i class="fa fa-search-plus" aria-hidden="true"></i> Advanced Search
+                            </a>
+                        </span>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<main id="main">
+    
+<header class="hero is-light">
+    <div class="hero-body">
+
+        <div class="container">
+            <h1 class="title">
+                An ALMA survey of CO in submillimetre galaxies: companions, triggering, and the environment in blended sources
+            </h1>
+
+                            <h2 class="subtitle authors" style="margin-top: 1em;">
+                    Wardlow, J.L.; Simpson, J.M.; Smail, Ian; Swinbank, A.M.; Blain, A.W.; Brandt, W.N.; Chapman, S.C.; Chen, Chian-Chou; Cooke, E.A.; Dannerbauer, H.; Gullberg, B.; Hodge, J.A.; Ivison, R.J.; Knudsen, K.K.; Scott, Douglas; Thomson, A.P.; Weiß, A.; van der Werf, P.P.
+                </h2>
+                    </div>
+    </div>
+</header>
+
+<section class="section">
+
+    <div class="container">
+
+        <nav role="navigation" aria-label="Breadcrumbs" class="breadcrumb level">
+            <ul>
+                <li>
+                    <a href="https://durham-repository.worktribe.com">Home</a>
+                </li>
+                <li>
+                    <a href="https://durham-repository.worktribe.com/outputs">Outputs</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="columns">
+            <div class="column is-one-quarter">
+                                    <figure tabindex="0" role="button" class="image is-256x256" aria-label="View Preview" style="cursor: pointer;" onclick="$('[data-preview]').click();">
+                        <img
+                            style="box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);"
+                            src="https://durham-repository.worktribe.com/thumbnail/1321971"
+                            alt="An ALMA survey of CO in submillimetre galaxies: companions, triggering, and the environment in blended sources Thumbnail"
+                        >
+                    </figure>
+
+                    <br /><br />
+                
+                
+                    <h2 class="subtitle">Authors</h2>
+
+                    <div style="max-height: 100vh; overflow: auto;">
+                                                                                    <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>J.L. Wardlow</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>J.M. Simpson</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                                                            <figure class="media-left">
+                                            <p class="image is-64x64">
+                                                <img src="https://durham-repository.worktribe.com/avatar/209586"  alt="Profile image of Ian Smail">
+                                            </p>
+                                        </figure>
+                                                                        <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <a href="https://durham-repository.worktribe.com/person/209586/ian-smail"><strong>Ian Smail</strong></a> <small><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7c151d12520f111d15103c18090e141d11521d1f520917">[email&#160;protected]</a></small>
+                                                <br>
+                                                Emeritus Professor
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media-right">
+                                        <a href="https://durham-repository.worktribe.com/person/209586/ian-smail" class="level-right" aria-label="Ian Smail">
+                                            <span class="icon is-small level-right"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                                        </a>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                                                            <figure class="media-left">
+                                            <p class="image is-64x64">
+                                                <img src="https://durham-repository.worktribe.com/avatar/209634"  alt="Profile image of Mark Swinbank">
+                                            </p>
+                                        </figure>
+                                                                        <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <a href="https://durham-repository.worktribe.com/person/209634/mark-swinbank"><strong>Professor Mark Swinbank</strong></a> <small><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="12733c7f3c61657b7c70737c79527667607a737f3c73713c6779">[email&#160;protected]</a></small>
+                                                <br>
+                                                Professor
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media-right">
+                                        <a href="https://durham-repository.worktribe.com/person/209634/mark-swinbank" class="level-right" aria-label="Mark Swinbank">
+                                            <span class="icon is-small level-right"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                                        </a>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>A.W. Blain</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>W.N. Brandt</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>S.C. Chapman</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>Chian-Chou Chen</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>E.A. Cooke</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>H. Dannerbauer</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>B. Gullberg</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>J.A. Hodge</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>R.J. Ivison</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>K.K. Knudsen</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>Douglas Scott</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                                                            <figure class="media-left">
+                                            <p class="image is-64x64">
+                                                <img src="https://durham-repository.worktribe.com/avatar/373838"  alt="Profile image of Alasdair Thomson">
+                                            </p>
+                                        </figure>
+                                                                        <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <a href="https://durham-repository.worktribe.com/person/373838/alasdair-thomson"><strong>Dr Alasdair Thomson</strong></a> <small><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cbaaa7aab8afaaa2b9e5bfa3a4a6b8a4a58bafbeb9a3aaa6e5aaa8e5bea0">[email&#160;protected]</a></small>
+                                                <br>
+                                                Academic Visitor
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media-right">
+                                        <a href="https://durham-repository.worktribe.com/person/373838/alasdair-thomson" class="level-right" aria-label="Alasdair Thomson">
+                                            <span class="icon is-small level-right"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                                        </a>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>A. Weiß</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                                                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>P.P. van der Werf</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                                                        </div>
+
+                    <br /><br />
+
+                
+                
+            </div>
+
+            <div class="column">
+
+                                    <div class="content abstract">
+                        <h3 class="subtitle">Abstract</h3>
+                        <p class="description">We present ALMA observations of the mid-J 12CO emission from six single-dish selected 870-μm sources in the Extended Chandra Deep Field-South and UKIDSS Ultra-Deep Survey fields. These six single-dish submillimetre sources were selected based on previous ALMA continuum observations, which showed that each comprised a blend of emission from two or more individual submillimetre galaxies (SMGs), separated on 5–10 arcsec scales. The six single-dish submillimetre sources targeted correspond to a total of 14 individual SMGs, of which seven have previously measured robust optical/near-infrared spectroscopic redshifts, which were used to tune our ALMA observations. We detect CO(3–2) or CO(4–3) at z = 2.3–3.7 in 7 of the 14 SMGs, and in addition serendipitously detect line emission from three gas-rich companion galaxies, as well as identify four new 3.3 mm selected continuum sources in the six fields. Joint analysis of our CO spectroscopy and existing data suggests that 64(±18)percent of the SMGs in blended submillimetre sources are unlikely to be physically associated. However, three of the SMG fields (50 per cent) contain new, serendipitously detected CO-emitting (but submillimetre-faint) sources at similar redshifts to the 870 μm selected SMGs we targeted. These data suggest that the SMGs inhabit overdense regions, but that these are not sufficiently overdense on ∼100 kpc scales to influence the source blending given the short lifetimes of SMGs. We find that 21±12percent of SMGs have spatially distinct and kinematically close companion galaxies (∼8–150 kpc and ≲ 300 km s−1), which may have enhanced their star formation via gravitational interactions.</p> 
+                    </div>
+                
+                                    <div class="content citation">
+                        <h3 class="subtitle">Citation</h3>
+                        <p class="description">
+                            Wardlow, J. L., Simpson, J. M., Smail, I., Swinbank, A. M., Blain, A. W., Brandt, W. N., Chapman, S. C., Chen, C.-C., Cooke, E. A., Dannerbauer, H., Gullberg, B., Hodge, J. A., Ivison, R. J., Knudsen, K. K., Scott, D., Thomson, A. P., Weiß, A., &amp; van der Werf, P. P. (2018). An ALMA survey of CO in submillimetre galaxies: companions, triggering, and the environment in blended sources. Monthly Notices of the Royal Astronomical Society, 479(3), 3879-3891. <a style="text-decoration: underline;" href="https://doi.org/10.1093/mnras/sty1526" target="_blank">https://doi.org/10.1093/mnras/sty1526</a>
+                        </p>
+                    </div>
+                
+                <table class="table" style="word-break: break-word; width:100%;">
+    <tbody>
+
+        
+                            <tr>
+                    <th class="table-background" width="35%">Journal Article Type</th>
+                                            <td>Article</td>  
+                                    </tr>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Acceptance Date</th>
+                                            <td>Jun 6, 2018</td>
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Online Publication Date</th>
+                                            <td>Jun 14, 2018</td>
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Publication Date</th>
+                                            <td>Sep 21, 2018</td>
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Deposit Date</th>
+                                            <td>Aug 23, 2018</td>
+                                    </tr>
+            
+        
+                                                <tr>
+                        <th class="table-background" width="35%">Publicly Available Date</th>
+                        <td>Aug 23, 2018</td>
+                    </tr>
+                            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Journal</th>
+                                            <td>Monthly Notices of the Royal Astronomical Society</td>  
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Print ISSN</th>
+                                            <td>0035-8711</td>  
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Electronic ISSN</th>
+                                            <td>1365-2966</td>  
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Publisher</th>
+                                            <td>Royal Astronomical Society</td>  
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Peer Reviewed</th>
+                                            <td>Peer Reviewed</td>  
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Volume</th>
+                                            <td>479</td>  
+                                    </tr>
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Issue</th>
+                                            <td>3</td>  
+                                    </tr>
+            
+        
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Pages</th>
+                                            <td>3879-3891</td>  
+                                    </tr>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">DOI</th>
+                                            <td><a style="text-decoration: underline;" href="https://doi.org/10.1093/mnras/sty1526" target="_blank">https://doi.org/10.1093/mnras/sty1526</a></td>  
+                                    </tr>
+            
+        
+            
+        
+            
+        
+                            <tr>
+                    <th class="table-background" width="35%">Public URL</th>
+                                            <td><a style="text-decoration: underline;" href="https://durham-repository.worktribe.com/output/1321971" target="_blank">https://durham-repository.worktribe.com/output/1321971</a></td>  
+                                    </tr>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        <!-- Sustainable Development Goals -->
+        
+    </tbody>
+</table>
+            </div>
+
+            <div class="column is-one-quarter">
+
+                <!-- SDG -->
+                
+                <!-- Files -->
+                
+                    
+                        <h4 class="subtitle">Files</h4>
+
+                                                            
+                                    <div class="file-wrapper">
+                                        <article class="media">
+                                            <div class="media-content">
+                                                <div class="content">
+                                                    <p>
+                                                        <strong>Published Journal Article</strong>
+                                                        <small>(1.6 Mb)</small>
+                                                        <br >
+                                                        <small>PDF</small>
+                                                    </p>
+
+                                                    <nav class="level is-mobile" aria-label="File actions">
+                                                        <div class="level-left">
+                                                            <a data-turbolinks="false" href="https://durham-repository.worktribe.com/OutputFile/1322051" class="level-item">
+                                                                <span style="margin-right: 5px;" class="icon is-small"><i class="fa fa-download"></i></span> Download
+                                                            </a>
+                                                                                                                            <a data-preview id="loadpreview1322051" href="#" onclick="$('#file-1322051').addClass('is-active'); $('html').css('overflow', 'hidden'); return false;" class="level-item">
+                                                                    <span style="margin-right: 5px;" class="icon is-small"><i class="fa fa-eye"></i></span> Preview
+                                                                </a>
+                                                                                                                    </div>
+                                                    </nav>
+
+                                                    
+                                                    
+                                                    
+                                                                                                            <p>
+                                                            <strong>Copyright Statement</strong><br />
+                                                            <small>This article has been accepted for publication in Monthly Notices of the Royal Astronomical Society ©: 2018 Author(s) Published by Oxford University Press on behalf of the Royal Astronomical Society. All rights reserved.</small>
+                                                        </p>
+                                                    
+                                                    
+                                                                                                    </div>
+                                            </div>
+
+                                        </article>
+                                    </div>
+
+                                                                            <div class="modal" id="file-1322051">
+    <div class="modal-background"></div>
+    <div class="modal-content" style="height:95%; width:95%">
+
+        
+            <iframe id="pdf_frame" src="/js/pdfjs/web/viewer.html?file=https://durham-repository.worktribe.com/previewfile/1322051/25983.pdf" width="100%" height="100%"></iframe>
+
+        
+    </div>
+    <button
+        onclick="cancelPreview($('#file-1322051'));"
+        class="modal-close is-large"
+        aria-label="close"
+    ></button>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function cancelPreview(modal)
+        {
+            modal.removeClass('is-active');
+
+            $('html').css('overflow', 'auto');
+
+            var media = {};
+            media.video = modal.find('video').get(0);
+            media.audio = modal.find('audio').get(0);
+
+            for (var player in media) {
+                if (media[player]) media[player].pause();
+            }
+        }
+    </script>
+</div>                                    
+                                    <br />
+                                                                
+                                                                        <br />
+                
+                <!-- Org Units -->
+                                    <aside class="menu" aria-label="Organisations">
+                        <p class="menu-label">Organisation(s)</p>
+                        <ul class="menu-list">
+                                                            <li>
+                                    <a href="https://durham-repository.worktribe.com/orgunit/155363/department-of-physics">
+                                        Department of Physics
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </aside>
+                    <br />
+                
+                <!-- Tags -->
+                
+                 <!-- Areas -->
+                
+                <!-- Centres -->
+                                    <aside class="menu" aria-label="Research Centres">
+                        <p class="menu-label">Research Centres</p>
+
+                        <ul class="menu-list">
+                                                                                                <li><a href="https://durham-repository.worktribe.com/researchcentre/2599243">Centre for Extragalactic Astronomy</a></li>
+                                 
+                                                    </ul>
+                    </aside>
+
+                    <br />
+                
+                <!-- Themes -->
+                
+                <br />
+
+                
+                
+                
+                    <h4 class="subtitle">You might also like</h4>
+
+                                            <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <a href="https://durham-repository.worktribe.com/output/1315967/radio-spectra-and-sizes-of-atacama-large-millimetersubmillimeter-array-identified-submillimeter-galaxies-evidence-of-age-related-spectral-curvature-and-cosmic-ray-diffusion">
+                                            <strong>Radio Spectra and Sizes of Atacama Large Millimeter/submillimeter Array-identified Submillimeter Galaxies: Evidence of Age-related Spectral Curvature and Cosmic-Ray Diffusion?</strong>
+                                        </a> <small>(2019)</small>
+                                        <br>
+                                        Journal Article
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <a href="https://durham-repository.worktribe.com/output/1382712/evolution-of-dust-obscured-star-formation-and-gas-to-z-22-from-hizels">
+                                            <strong>Evolution of Dust-obscured Star Formation and Gas to z = 2.2 from HiZELS</strong>
+                                        </a> <small>(2017)</small>
+                                        <br>
+                                        Journal Article
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <a href="https://durham-repository.worktribe.com/output/3082568/an-alma-survey-of-submillimetre-galaxies-in-the-extended-chandra-deep-field-south-an-unbiased-study-of-smg-environments-measured-with-narrow-band-imaging">
+                                            <strong>An ALMA survey of submillimetre galaxies in the Extended Chandra Deep Field South: an unbiased study of SMG environments measured with narrow-band imaging</strong>
+                                        </a> <small>(2024)</small>
+                                        <br>
+                                        Journal Article
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <a href="https://durham-repository.worktribe.com/output/2160818/3d-tomography-of-the-giant-lya-nebulae-of-z-3-5-radio-loud-agn">
+                                            <strong>3D tomography of the giant Lyα nebulae of z ≈ 3–5 radio-loud AGN</strong>
+                                        </a> <small>(2023)</small>
+                                        <br>
+                                        Journal Article
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <a href="https://durham-repository.worktribe.com/output/1273089/an-alma-survey-of-the-scuba-2-cosmology-legacy-survey-ukidssuds-field-dust-attenuation-in-high-redshift-lyman-break-galaxies">
+                                            <strong>An ALMA survey of the SCUBA-2 Cosmology Legacy Survey UKIDSS/UDS field: Dust attenuation in high-redshift Lyman break Galaxies</strong>
+                                        </a> <small>(2020)</small>
+                                        <br>
+                                        Journal Article
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    
+                    <br /><br />
+
+                
+                <h4 class="subtitle">Downloadable Citations</h4>
+
+                <nav style="margin-top: 10px;" class="level">
+                                            <div class="level-item has-text-centered">
+                            <div>
+                                <a aria-label="Citation" data-turbolinks="false" href="https://durham-repository.worktribe.com/citation/1321971?format=html"><i class="fa fa-download fa-3x" aria-hidden="true"></i></a>
+                                <p class="heading">HTML</p>
+                            </div>
+                        </div>
+                                        <div class="level-item has-text-centered">
+                        <div>
+                            <a aria-label="BIB Citation" data-turbolinks="false" href="https://durham-repository.worktribe.com/citation/1321971?format=bib"><i class="fa fa-download fa-3x" aria-hidden="true"></i></a>
+                            <p class="heading">BIB</p>
+                        </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <a aria-label="RTF Citation" data-turbolinks="false" href="https://durham-repository.worktribe.com/citation/1321971?format=rtf"><i class="fa fa-download fa-3x" aria-hidden="true"></i></a>
+                            <p class="heading">RTF</p>
+                        </div>
+                    </div>
+                                    </nav>
+
+            </div>
+
+        </aside>
+    </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p class="footer-links">
+            <strong>Durham Research Online (DRO)</strong> Powered by <a href="https://worktribe.com">Worktribe</a> |
+            <a href="https://durham-repository.worktribe.com/accessibility">Accessibility</a>
+        </p>
+    </div>
+</footer>
+
+<!-- About -->
+<div class="modal" id="about" role="dialog" aria-labelledby="about-title" aria-modal="true" title="About Durham Research Online (DRO)" tabindex="0">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <div class="modal-card-head">
+            <p id="about-title" class="modal-card-title">About Durham Research Online (DRO)</p>
+            <button class="delete" aria-label="close" onclick="$('#about').removeClass('is-active');"></button>
+        </div>
+        <section class="modal-card-body" id="about-content">
+
+                            <p>Administrator e-mail: <a href="/cdn-cgi/l/email-protection#6206100d4c03060f0b0c220617100a030f4c03014c1709"><span class="__cf_email__" data-cfemail="4f2b3d20612e2b2226210f2b3a3d272e22612e2c613a24">[email&#160;protected]</span></a></p>
+            
+            <br />
+
+            <p>This application uses the following open-source libraries:</p>
+
+            <br />
+
+            <h4 class="subtitle">SheetJS Community Edition</h4>
+            <p>Apache License Version 2.0 (<a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a>)</p>
+
+            <br />
+
+            <h4 class="subtitle">PDF.js</h4>
+            <p>Apache License Version 2.0 (<a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a>)</p>
+
+            <br />
+
+            <h4 class="subtitle">Font Awesome</h4>
+            <p>SIL OFL 1.1 (<a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>)</p>
+            <p>MIT License (<a href="http://opensource.org/licenses/mit-license.html">http://opensource.org/licenses/mit-license.html</a>)</p>
+            <p>CC BY 3.0 (<a href=" http://creativecommons.org/licenses/by/3.0/"> http://creativecommons.org/licenses/by/3.0/</a>)</p>
+
+            <br /><br />
+
+        </section>
+        <div aria-label="Modal Footer" class="modal-card-foot">
+            <p>Powered by <a href="http://worktribe.com" target="_blank"><strong>Worktribe</strong></a>  &copy; 2026</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="advanced-search" role="dialog" aria-labelledby="advanced-search-title" aria-modal="true" title="Advanced Outputs Search" tabindex="0">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <div class="modal-card-head">
+            <p id="advanced-search-title" class="modal-card-title">Advanced Search</p>
+            <button class="delete" aria-label="close" onclick="$('#search').removeClass('is-active'); $('html').css('overflow', 'auto');"></button>
+        </div>
+
+        <section class="modal-card-body">
+
+            <form id="advancedform" action="https://durham-repository.worktribe.com/outputs" method="get" class="validate">
+
+                <input type="hidden" name="advanced" value="1">
+
+                <label for="id" class="label">Durham Research Online (DRO) ID</label>
+
+                <div class="field">
+                    <p class="control">
+                        <input aria-label="Durham Research Online (DRO) ID" style="width: 33%;" class="input" type="text" placeholder="Durham Research Online (DRO) ID" name="id" id="id" value="">
+                    </p>
+                </div>
+
+                <!-- Title -->
+                <label for="title" class="label">Title</label>
+
+                <div class="field has-addons">
+                    <p class="control">
+                        <span class="select">
+                            <select aria-label="Title Operator" name="Title_operator">
+                                <option  value="all">all of</option>
+                                <option  value="any">any of</option>
+                            </select>
+                        </span>
+                    </p>
+                    <p class="control is-expanded">
+                        <input aria-label="Title" class="input" type="text" placeholder="Title" name="Title" id="title" value="">
+                    </p>
+                </div>
+
+                <!-- Name -->
+                <label for="name" class="label">Name</label>
+
+                <div class="field">
+                    <p class="control is-expanded">
+                        <input aria-label="Name" class="input" type="text" placeholder="Name" name="Name" id="name" value="">
+                    </p>
+                </div>
+
+                <!-- Year -->
+                <label for="year" class="label">Year</label>
+        
+                <div class="field">
+                    <p class="control">
+                        <input aria-label="Year" style="width: 33%;" class="input" type="text" placeholder="2026" name="ReportingDate" id="year" value="">
+                    </p>
+                </div>
+
+                <!-- Keywords -->
+                <label for="keywords" class="label">Keywords</label>
+
+                <div class="field has-addons">
+                    <p class="control">
+                        <span class="select">
+                            <select aria-label="Keywords Operator" name="Keywords_operator">
+                                <option  value="all">all of</option>
+                                <option  value="any">any of</option>
+                            </select>
+                        </span>
+                    </p>
+                    <p class="control is-expanded">
+                        <input aria-label="Keywords" class="input" type="text" placeholder="Keywords" name="Keywords" id="keywords" value="">
+                    </p>
+                </div>
+
+                <!-- Divisions -->
+                <label for="organisation" class="label">Faculties and Departments</label>
+                    
+                <div class="field">
+                    <div class="select is-multiple control">
+                        <select aria-label="Faculties and Departments" name="Organisation[]" id="organisation" multiple>
+                                                            <option  value="1004340">Accommodation &amp; Commercial Services</option>
+                                                            <option  value="513668">Advanced Research Computing</option>
+                                                            <option  value="1004345">Careers and Enterprise</option>
+                                                            <option  value="1076691">Colleges</option>
+                                                            <option  value="1076688">Colleges &amp; Student Experience Division</option>
+                                                            <option  value="1004335">Computing and Information Services</option>
+                                                            <option  value="298099">Department of Accounting</option>
+                                                            <option  value="155350">Department of Anthropology</option>
+                                                            <option  value="155357">Department of Archaeology</option>
+                                                            <option  value="155366">Department of Biosciences</option>
+                                                            <option  value="155365">Department of Chemistry</option>
+                                                            <option  value="155335">Department of Classics &amp; Ancient History</option>
+                                                            <option  value="155361">Department of Computer Science</option>
+                                                            <option  value="155360">Department of Earth Sciences</option>
+                                                            <option  value="840694">Department of Economics</option>
+                                                            <option  value="155359">Department of Engineering</option>
+                                                            <option  value="155342">Department of English Studies</option>
+                                                            <option  value="840703">Department of Finance</option>
+                                                            <option  value="155349">Department of Geography</option>
+                                                            <option  value="155341">Department of History</option>
+                                                            <option  value="298101">Department of Management and Marketing</option>
+                                                            <option  value="155364">Department of Mathematical Sciences</option>
+                                                            <option  value="155340">Department of Music</option>
+                                                            <option  value="155338">Department of Philosophy</option>
+                                                            <option  value="155363">Department of Physics</option>
+                                                            <option  value="155362">Department of Psychology</option>
+                                                            <option  value="155354">Department of Sociology</option>
+                                                            <option  value="155355">Department of Sport and Exercise Sciences</option>
+                                                            <option  value="155336">Department of Theology and Religion</option>
+                                                            <option  value="1004336">Development and Alumni Relations</option>
+                                                            <option  value="1004346">Durham Centre for Academic Development</option>
+                                                            <option  value="155358">Durham Law School</option>
+                                                            <option  value="154055">Durham University</option>
+                                                            <option  value="1004343">Education Division</option>
+                                                            <option  value="1004353">Equality, Diversity &amp; Inclusion</option>
+                                                            <option  value="1004341">Estates and Facilities</option>
+                                                            <option  value="154056">Faculty of Arts and Humanities</option>
+                                                            <option  value="298098">Faculty of Business</option>
+                                                            <option  value="154059">Faculty of Science</option>
+                                                            <option  value="154057">Faculty of Social Sciences</option>
+                                                            <option  value="1004350">Finance</option>
+                                                            <option  value="1004349">Finance and Procurement Services</option>
+                                                            <option  value="1076695">Global Engagement</option>
+                                                            <option  value="1004355">Governance Support Services</option>
+                                                            <option  value="1004337">HR &amp; OD</option>
+                                                            <option  value="1004348">International Office</option>
+                                                            <option  value="1004356">Legal Services</option>
+                                                            <option  value="1004338">Marketing and Communications</option>
+                                                            <option  value="513681">Office of the PVC (Research)</option>
+                                                            <option  value="1076689">PVC Colleges and Student Experience Office</option>
+                                                            <option  value="1004352">PVC EDI Division</option>
+                                                            <option  value="1004347">PVC Global Division</option>
+                                                            <option  value="1004351">Procurement Services</option>
+                                                            <option  value="1004334">Professional Services</option>
+                                                            <option  value="1004332">Provost Division</option>
+                                                            <option  value="1076692">Provost&#039;s Office</option>
+                                                            <option  value="1076694">Recruitment and Admissions</option>
+                                                            <option  value="155367">Research &amp; Innovation Services</option>
+                                                            <option  value="154060">Research Division</option>
+                                                            <option  value="1076696">Research Institutes</option>
+                                                            <option  value="155353">School of Education</option>
+                                                            <option  value="155356">School of Government &amp; International Affairs</option>
+                                                            <option  value="155343">School of Modern Languages and Cultures</option>
+                                                            <option  value="1004333">Strategic Planning &amp; Insight Office</option>
+                                                            <option  value="1076693">Strategy Delivery Unit</option>
+                                                            <option  value="1004344">Student And Academic Services Directorate</option>
+                                                            <option  value="1076690">Student Support &amp; Wellbeing Directorate</option>
+                                                            <option  value="1004357">University Assurance Service</option>
+                                                            <option  value="1004339">University Library and Collections</option>
+                                                            <option  value="1004354">University Secretary</option>
+                                                            <option  value="1004358">University Secretary&#039;s Office</option>
+                                                            <option  value="1004359">Vice-Chancellor</option>
+                                                            <option  value="1004360">Vice-Chancellor&#039;s Office</option>
+                                                    </select>
+                    </div>
+                </div>
+
+                <!-- Type -->
+                <label for="type" class="label">Type</label>
+                    
+                <div class="field">
+                    <div class="select is-multiple control">
+                        <select aria-label="Type" name="Type[]" id="type" multiple>
+                                                            <option  value="Book">Book</option>
+                                                            <option  value="Book Chapter">Book Chapter</option>
+                                                            <option  value="Conference Proceeding">Conference Proceeding</option>
+                                                            <option  value="Data">Data</option>
+                                                            <option  value="Dataset">Dataset</option>
+                                                            <option  value="Digital Artefact">Digital Artefact</option>
+                                                            <option  value="Exhibition / Performance">Exhibition / Performance</option>
+                                                            <option  value="Journal Article">Journal Article</option>
+                                                            <option  value="Newspaper / Magazine">Newspaper / Magazine</option>
+                                                            <option  value="Other">Other</option>
+                                                            <option  value="Patent">Patent</option>
+                                                            <option  value="Physical Artefact">Physical Artefact</option>
+                                                            <option  value="Preprint / Working Paper">Preprint / Working Paper</option>
+                                                            <option  value="Presentation / Conference">Presentation / Conference</option>
+                                                            <option  value="Presentation / Conference Contribution">Presentation / Conference Contribution</option>
+                                                            <option  value="Report">Report</option>
+                                                            <option  value="Thesis">Thesis</option>
+                                                    </select>
+                    </div>
+                </div>
+
+                <!-- Publication Status -->
+                <label for="publicationstatus" class="label">Publication Status</label>
+                    
+                <div class="field">
+                    <div class="select is-multiple control">
+                        <select aria-label="Publication Status" name="PublicationStatus[]" id="publicationstatus" multiple>
+                            <option  value="Submitted">Submitted</option>
+                            <option  value="Accepted">Accepted</option>
+                            <option  value="In Press">In Press</option>
+                            <option  value="Published">Published</option>
+                            <option  value="Unpublished">Unpublished</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Journal -->
+                <label for="journal" class="label">Journal or Publication Title</label>
+
+                <div class="field has-addons">
+                    <p class="control">
+                        <span class="select">
+                            <select aria-label="Journal Operator" name="Journal_operator">
+                                <option  value="all">all of</option>
+                                <option  value="any">any of</option>
+                            </select>
+                        </span>
+                    </p>
+                    <p class="control is-expanded">
+                        <input aria-label="Journal or Publication Title" class="input" type="text" placeholder="Journal or Publication Title" name="Journal" id="journal" value="">
+                    </p>
+                </div>
+
+                <!-- Order -->
+                <label for="order" class="label">Order the results</label>
+                
+                <div class="field">
+                    <div class="control">
+                        <div class="select" >
+                            <select aria-label="Order" name="order" id="order">
+                                <option  value="updated_atDesc">By last modified (most recent first)</option>
+                                <option  value="updated_at">By last modified (oldest first)</option>
+                                <option  value="ReportingDateDesc">By year (most recent first)</option>
+                                <option  value="ReportingDate">By year (oldest first)</option>
+                                <option  value="Title">By title</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </section>
+        <div class="modal-card-foot">
+            <div class="field is-grouped">
+                <div class="control">
+                    <button onclick="$('#advancedform').submit(); $(this).html('Searching').attr('disabled', true);" class="button is-link">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery-3.7.0.min.js"></script>
+    <script src="/js/turbolinks.min.js"></script>
+
+<script>
+    jQuery(document).ready(function ($) {
+
+        
+        $('html').css('overflow', 'auto');
+
+        var $toggle = $('#nav-toggle');
+        var $menu = $('#nav-menu');
+
+        $toggle.click(function() {
+            $(this).toggleClass('is-active');
+            $menu.toggleClass('is-active');
+        });
+
+                            
+        $('.tree a').on('mouseover focus', function(e) {
+            $.get($(this).attr("href"), function(data, status) {
+                if (data.Description) {
+                    $('#org_info').show();
+
+                    $('#org_title').text(data.Name);
+                    $('#org_desc').text(data.Description);
+                } else {
+                    $('#org_info').hide();
+                }
+            });
+        });
+
+        $('.navbar-link').focus(function() {
+            var link = $(this);
+            var dropdown = link.next('.navbar-dropdown');
+            dropdown.css('display', 'block');
+
+            dropdown.children().last().on('blur', function() {
+                dropdown.attr('style', '');
+            });
+        });
+
+        $('.navbar-link').blur(function() {
+            var link = $(this);
+            var dropdown = link.next('.navbar-dropdown');
+            var children = dropdown.children();
+
+            // timeout to handle split second of focus loss from tab
+            setTimeout(function() {
+                if (! children.is(':focus')) {
+                    dropdown.attr('style', '');
+                }
+            }, 10);
+        });
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function() {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+
+        $(window).click(function() {
+            var dropdowns = $('.navbar-dropdown');
+            if (dropdowns.is(':visible')) {
+                dropdowns.attr('style', '');
+            }
+        });
+
+        $(document).keypress(function(event){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            var $modal = $('#search');
+            if(keycode == '13' && $modal.hasClass('is-active')){
+                $('#advancedform').submit();
+                $modal.find('button.is-link').html('Searching')
+                    .attr('disabled', true);
+            }
+        });
+
+        var checkContainerExist = setInterval(function() {
+            if ($('#irus_widget_form').length) {
+            $('#badge_only_checkbox').attr('aria-label', 'Badge only')
+            $('#badge_legend_checkbox').attr('aria-label', 'Badge legend')
+            $('#start_date_selector').attr('aria-label', 'Start date')
+            $('#end_date_selector').attr('aria-label', 'End date')
+            $('#item_types_checkbox').attr('aria-label', 'Item types')
+
+            clearInterval(checkContainerExist);
+            }
+        }, 100); // check every 100ms
+
+        const clearConfirm = `CLEARDOWN`
+        
+        $('#cleardown').on('click', async function() {
+            let check = prompt(`Are you sure you want to cleardown? type ${clearConfirm}`); 
+            
+            if (check === clearConfirm) {
+                const url = 'https://durham-repository.worktribe.com/cleardown'
+                
+                fetch(url)
+                    .then((response) => response.json())
+                    .then(({ message }) => {
+                        alert(message)
+                    });
+            }
+        })
+
+        const syncConfirm = `KITCHENSINK`
+
+        $('#fullsync').on('click', async function() {
+            let check = prompt(`Are you sure you want to do a full sync? type ${syncConfirm}`); 
+            
+            if (check === syncConfirm) {
+                $(this).html('Syncing...')
+
+                const url = 'https://durham-repository.worktribe.com/fullsync'
+                
+                fetch(url)
+                    .then((response) => response.json())
+                    .then(({ message }) => {
+                        $(this).html('Full Sync')
+
+                        alert(message)
+                    });
+            }
+        })
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a01e2709ce43ebf0',t:'MTc3OTgxMjkwMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6717e3642f034ad99670e3ebd0a80824","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -141,7 +141,23 @@ def main():
     with open(input_path, "r", encoding="utf-8") as f:
         dataset = json.load(f)
         
-    print(f"Cargadas {len(dataset)} iniciativas con transcripción.")
+    print(f"Cargadas {len(dataset)} iniciativas de transcripts_dataset.json.")
+    
+    # Deduplicate by ID to ensure clean replication statistics
+    unique_dataset = {}
+    for init in dataset:
+        init_id = init["id"]
+        t_len = len(init.get("transcript", "") or "")
+        if init_id not in unique_dataset:
+            unique_dataset[init_id] = init
+        else:
+            existing_len = len(unique_dataset[init_id].get("transcript", "") or "")
+            if t_len > existing_len:
+                unique_dataset[init_id] = init
+                
+    dataset = list(unique_dataset.values())
+    print(f"Total iniciativas únicas tras deduplicar: {len(dataset)}")
+
     
     api_key = args.key or os.environ.get("GEMINI_API_KEY")
     use_llm = False
@@ -326,7 +342,8 @@ def main():
     sorted_groups = sorted(group_stats.items(), key=lambda x: x[1]["total_asr"]/x[1]["count"] if x[1]["count"] > 0 else 0, reverse=True)
     
     # Generate report Markdown
-    report_path = "paper/draft_manuscript.md"
+    report_path = "data/processed/analysis_report.md"
+
     report_md = f"""# Auditoría de Sesiones del Congreso: Cuantificación del Desplazamiento de Agenda (ASR) y Evasión (ER)
 
 Este informe detalla los resultados empíricos del análisis cuantitativo de discurso realizado sobre las iniciativas de control oral en Pleno (Preguntas Orales) de las legislaturas XIV y XV en el Congreso de los Diputados de España. El objetivo es contrastar científicamente si la energía deliberativa de las instituciones se desvía de los problemas reales de gestión ciudadana (*policy*) hacia la confrontación partidista y luchas por el poder (*politics*).

@@ -1,13 +1,13 @@
 {
-    "total_debates_analyzed": 2476,
-    "policy_manifest_count": 396,
-    "politics_manifest_count": 2048,
+    "total_debates_analyzed": 1284,
+    "policy_manifest_count": 227,
+    "politics_manifest_count": 1047,
     "xiv_legislature": {
-        "avg_asr": 69.01,
-        "avg_er": 69.82
+        "avg_asr": 69.21,
+        "avg_er": 71.6
     },
     "xv_legislature": {
-        "avg_asr": 71.19,
-        "avg_er": 68.85
+        "avg_asr": 71.83,
+        "avg_er": 69.21
     }
 }

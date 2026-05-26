@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliografía Comentada: Politics without Policy?</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #0b0f19;
+            --bg-sidebar: #111827;
+            --bg-card: #1f2937;
+            --bg-card-hover: #374151;
+            --primary: #06b6d4;
+            --primary-hover: #0891b2;
+            --primary-glow: rgba(6, 182, 212, 0.15);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --text-bright: #ffffff;
+            --border: #374151;
+            --accent-green: #10b981;
+            --accent-amber: #f59e0b;
+            --accent-rose: #f43f5e;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Sidebar */
+        aside {
+            width: 320px;
+            background-color: var(--bg-sidebar);
+            border-right: 1px solid var(--border);
+            padding: 2.5rem 1.5rem;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .brand h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-bright);
+            letter-spacing: -0.025em;
+            background: linear-gradient(135deg, var(--text-bright) 30%, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .nav-links a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            background-color: rgba(6, 182, 212, 0.05);
+            border-color: rgba(6, 182, 212, 0.1);
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+            background-color: var(--primary-glow);
+            border-color: rgba(6, 182, 212, 0.2);
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Main Content */
+        main {
+            margin-left: 320px;
+            flex-grow: 1;
+            padding: 3rem 4rem;
+            max-width: 1200px;
+        }
+
+        header {
+            margin-bottom: 3.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+        }
+
+        .badge-project {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: var(--primary-glow);
+            color: var(--primary);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 20px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        header h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--text-bright);
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+            line-height: 1.15;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            font-weight: 300;
+            max-width: 800px;
+        }
+
+        /* Sections */
+        section {
+            display: none;
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h3.section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.85rem;
+            color: var(--text-bright);
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        /* Bibliographic Cards */
+        .bib-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .bib-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bib-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: var(--primary);
+            opacity: 0.7;
+        }
+
+        .bib-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .citation-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-bright);
+            line-height: 1.3;
+        }
+
+        .citation-authors {
+            font-size: 0.95rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .citation-source {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .card-badge {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .badge-teoria { background-color: rgba(245, 158, 11, 0.1); color: var(--accent-amber); border: 1px solid rgba(245, 158, 11, 0.2); }
+        .badge-metodo { background-color: rgba(16, 185, 129, 0.1); color: var(--accent-green); border: 1px solid rgba(16, 185, 129, 0.2); }
+        .badge-contexto { background-color: rgba(6, 182, 212, 0.1); color: var(--primary); border: 1px solid rgba(6, 182, 212, 0.2); }
+        .badge-evasion { background-color: rgba(244, 63, 94, 0.1); color: var(--accent-rose); border: 1px solid rgba(244, 63, 94, 0.2); }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .card-block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .block-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .block-content {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .block-content strong {
+            color: var(--text-bright);
+        }
+
+        /* Author Profile Box */
+        .author-box {
+            background-color: rgba(17, 24, 39, 0.5);
+            border: 1px dashed var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--primary-glow);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--primary);
+            flex-shrink: 0;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .author-name {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-bright);
+        }
+
+        .author-bio {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: justify;
+        }
+
+        /* Callout Box */
+        .callout {
+            background-color: rgba(6, 182, 212, 0.03);
+            border: 1px solid rgba(6, 182, 212, 0.1);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .callout-icon {
+            color: var(--primary);
+            font-size: 1.5rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .callout-content h4 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-bright);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .callout-content p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* Code Block Mock */
+        .code-container {
+            font-family: 'Fira Code', monospace;
+            background-color: #0d1117;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            font-size: 0.85rem;
+            overflow-x: auto;
+            color: #c9d1d9;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            body {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+                padding: 1.5rem;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside>
+        <div class="brand">
+            <span class="badge-project">Replication Package</span>
+            <h1>Politics without Policy?</h1>
+            <p>Bibliografía Comentada del Proyecto</p>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active" onclick="switchTab(event, 'fundamentos')">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    Fundamentos del Draft
+                </a></li>
+                <li><a href="#" onclick="switchTab(event, 'ampliacion')">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Lecturas de Ampliación
+                </a></li>
+                <li><a href="#" onclick="switchTab(event, 'estilo')">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path></svg>
+                    Estilo Research & Politics
+                </a></li>
+                <li><a href="#" onclick="switchTab(event, 'guia')">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    Guía de Estudio
+                </a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>Turquesa 210 — 2026</p>
+            <p>Diseño de Arquitectura Institucional</p>
+        </div>
+    </aside>
+
+    <!-- Main Section Area -->
+    <main>
+        <header>
+            <span class="badge-project">Material de Preparación</span>
+            <h2>Fundamentos Teóricos y Metodológicos</h2>
+            <p>Esta recopilación bibliográfica comentada establece las bases científicas para comprender el fenómeno del desplazamiento temático (*agenda shift*) y la evasión ejecutiva en sede parlamentaria.</p>
+        </header>
+
+        <!-- SECTION 1: FUNDAMENTOS DEL DRAFT -->
+        <section id="fundamentos" class="active">
+            <div class="callout">
+                <span class="callout-icon">💡</span>
+                <div class="callout-content">
+                    <h4>¿Por qué estos 11 artículos?</h4>
+                    <p>Estos trabajos constituyen el andamiaje del paper. Aportan tres elementos clave: <strong>el método de codificación</strong> (Bara et al.), <strong>la teoría lingüística de la evasión</strong> (Bull, Rasiah, Clayman) y <strong>el contexto institucional</strong> (Maurer, Martin, Green-Pedersen).</p>
+                </div>
+            </div>
+
+            <div class="bib-grid">
+
+                <!-- 1. BARA ET AL -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Bara, J., Weale, A., & Bicquelet, A.</span>
+                            <h4 class="citation-title">Analyzing parliamentary debate: How and why?</h4>
+                            <span class="citation-source">Quality & Quantity, 41, 577-597. (2007)</span>
+                        </div>
+                        <span class="card-badge badge-metodo">Metodología</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Este artículo metodológico sistematiza las técnicas de análisis cuantitativo y cualitativo de textos aplicadas a las transcripciones parlamentarias. El núcleo de su propuesta es la división del discurso en enunciados individuales clasificados bajo la dicotomía de <strong>Policy</strong> (contenidos sustantivos referidos a regulación, presupuesto, gestión técnica e impacto administrativo) y <strong>Politics</strong> (debates referidos a disputas de poder, competencia partidista, ideología y legitimación de coaliciones).</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Es el <strong>fundamento metodológico directo</strong> de nuestro pipeline de clasificación. Justifica la validez científica de segmentar el discurso oral en Unidades de Discurso (UD) a nivel de oración y clasificarlas dicotómicamente para evaluar la calidad deliberativa.</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">JB</div>
+                            <div class="author-info">
+                                <span class="author-name">Judith Bara, Albert Weale & Arianne Bicquelet</span>
+                                <span class="author-bio">Judith Bara es profesora en la Queen Mary University of London y experta en análisis de manifiestos y discurso del Comparative Agendas Project. Albert Weale es Catedrático Emérito de Teoría Política en el University College London (UCL), de amplia trayectoria en políticas públicas. Arianne Bicquelet se especializa en metodologías informáticas cualitativas aplicadas al análisis de discursos legislativos.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. BULL & MAYER -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Bull, P., & Mayer, K.</span>
+                            <h4 class="citation-title">How Winston Churchill and Margaret Thatcher evade questions in political interviews</h4>
+                            <span class="citation-source">Journal of Language and Social Psychology, 12(4), 270-288. (1993)</span>
+                        </div>
+                        <span class="card-badge badge-evasion">Evasión</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Estudio seminal de psicología social aplicada al discurso político. Los autores analizaron entrevistas de televisión de Churchill y Thatcher para identificar patrones sistemáticos de elusión. Desarrollaron la primera taxonomía formal de no-respuestas, demostrando que los políticos no siempre evaden mintiendo, sino utilizando <strong>técnicas lingüísticas defensivas</strong>, como atacar la pregunta, cuestionar los presupuestos del entrevistador o realizar declaraciones de intenciones abstractas.</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Aporta el marco conceptual para entender el comportamiento evasivo. Permite justificar por qué la evasión en sede de control no es un hecho fortuito o torpeza del ministro, sino una <strong>estrategia lingüística deliberada</strong> para eludir la fiscalización de su cartera.</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">PB</div>
+                            <div class="author-info">
+                                <span class="author-name">Peter Bull & Kate Mayer</span>
+                                <span class="author-bio">Peter Bull es profesor de psicología en la Universidad de York (Reino Unido) y el máximo referente global en la microestructura de la comunicación política no-verbal y el análisis de la evasión y el equívoco en discursos públicos. Kate Mayer es investigadora especialista en psicología del lenguaje.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. BULL 2003 -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Bull, P.</span>
+                            <h4 class="citation-title">The Microanalysis of Political Communication: Claptrap and Equivocation</h4>
+                            <span class="citation-source">Psychology Press. Monografía. (2003)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Monografía cumbre donde Bull unifica más de una década de investigaciones. Detalla el concepto de **equivocación estratégica** y clasifica formalmente **35 tipos distintos de no-respuestas** agrupadas en 11 categorías. Entre ellas destaca la *deflexión temaria* (evadir introduciendo un ataque al oponente) y la *redefinición de la agenda del diálogo*.</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Proporciona la robustez teórica necesaria para conceptualizar la variable **Evasion Rate (ER)**. Nos permite catalogar el comportamiento de los ministros españoles de la XV legislatura dentro de una teoría consolidada de la evasión sistemática.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. CLAYMAN -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Clayman, S. E.</span>
+                            <h4 class="citation-title">Answers and evasions</h4>
+                            <span class="citation-source">Language in Society, 30(3), 403-442. (2001)</span>
+                        </div>
+                        <span class="card-badge badge-metodo">Metodología</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Desde la perspectiva de la sociología del lenguaje y el análisis de la conversación, Clayman examina la tensión interactiva entre la pregunta y la respuesta. Describe cómo las preguntas parlamentarias o periodísticas ejercen una <strong>fuerza coercitiva</strong> (agenda, presuposición, preferencia) y cómo los políticos ejecutan maniobras de transición (ej. *"eso es importante, pero la verdadera clave es..."*) para desligarse de esa fuerza sin parecer evasivos ante la audiencia.</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Aporta valor metodológico al explicar la mecánica interactiva de las preguntas orales en el Pleno. Justifica por qué el análisis del desvío debe estudiar las oraciones de transición, que son habitualmente clasificadas como *ambiguas* por los diccionarios y requieren de LLM para su correcta resolución semántica.</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">SC</div>
+                            <div class="author-info">
+                                <span class="author-name">Steven E. Clayman</span>
+                                <span class="author-bio">Catedrático de Sociología en la Universidad de California, Los Ángeles (UCLA). Es uno de los principales exponentes del Análisis de Conversación (CA) aplicado a las interacciones en los medios de comunicación y la esfera pública gubernamental.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. GREEN-PEDERSEN -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Green-Pedersen, C.</span>
+                            <h4 class="citation-title">Who sets the agenda in parliamentary government? Defining the role of opposition and government in parliamentary questions</h4>
+                            <span class="citation-source">European Journal of Political Research, 49(3), 347-369. (2010)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Analiza el comportamiento estratégico de la oposición y el gobierno en Dinamarca y el Reino Unido mediante el uso de preguntas parlamentarias. Concluye que las preguntas no operan como foros de control neutral, sino como **dispositivos de fijación de agenda partidista**. La oposición selecciona temas con encuadres altamente conflictivos para obligar al Gobierno a responder en escenarios desfavorables, forzando un desplazamiento temático mutuo.</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Sostiene la hipótesis de que el desplazamiento de agenda (**ASR**) no es solo responsabilidad del ministro que evade, sino también del **diputado de la oposición** que inicia la pregunta con un marco (*frame*) político hostil. Explica los incentivos institucionales de party competition.</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">CG</div>
+                            <div class="author-info">
+                                <span class="author-name">Christoffer Green-Pedersen</span>
+                                <span class="author-bio">Catedrático de Ciencia Política en la Universidad de Aarhus (Dinamarca). Es una de las figuras más influyentes en el estudio del agenda-setting parlamentario en Europa y uno de los directores destacados del Comparative Agendas Project (CAP).</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. HOOD -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Hood, C.</span>
+                            <h4 class="citation-title">The Blame Game: Spin, Bureaucracy, and Self-Preservation in Government</h4>
+                            <span class="citation-source">Princeton University Press. Monografía. (2011)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Obra magna sobre la sociología del poder. Introduce la teoría del **Blame Avoidance (evitación de la culpa)**. Hood demuestra que los actores gubernamentales priorizan evitar la culpa por encima de ganar crédito. Para ello, ante el escrutinio de problemas públicos, los ministros utilizan tres tipos de estrategias: procedimentales (crear agencias), políticas (desviar la culpa a gobiernos autónomos o al partido rival) y de comunicación/spin (desviar la atención temática).</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Explica teóricamente por qué la **Tasa de Evasión del Ministro (ER)** es tan alta en España (cercana al 70%). El ministro utiliza su turno de réplica para culpabilizar a la comunidad autónoma o al gobierno anterior, eludiendo la rendición de cuentas técnicas.</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">CH</div>
+                            <div class="author-info">
+                                <span class="author-name">Christopher Hood</span>
+                                <span class="author-bio">Catedrático Emérito de Gobierno y ex-Director del Departamento de Política y Relaciones Internacionales en la Universidad de Oxford. Es una de las autoridades globales más respetadas en administración pública y comportamiento burocrático.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. MARTIN -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Martin, S.</span>
+                            <h4 class="citation-title">Parliamentary Questions</h4>
+                            <span class="citation-source">The Oxford Handbook of Legislative Studies, Oxford University Press. (2011)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Capítulo de referencia que resume el estado de la literatura científica sobre preguntas parlamentarias orales y escritas a nivel internacional. Define las funciones del control legislativo: función informativa, función simbólica y función de señalización hacia el electorado. Muestra cómo varían los incentivos según el sistema sea presidencialista, parlamentario mayoritario o proporcional.</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Es la cita canónica introductoria para el marco teórico. Contextualiza cómo opera el control legislativo español en comparación con otros parlamentos de la OCDE.</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">SM</div>
+                            <div class="author-info">
+                                <span class="author-name">Shane Martin</span>
+                                <span class="author-bio">Catedrático de Ciencia Política en la Universidad de Essex. Experto reconocido internacionalmente en el funcionamiento comparado de los parlamentos y las relaciones entre el ejecutivo y el legislativo.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. MAURER -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Maurer, L. M.</span>
+                            <h4 class="citation-title">El poder de control del Parlamento: Las preguntas al Gobierno en el Congreso de los Diputados</h4>
+                            <span class="citation-source">Centro de Investigaciones Sociológicas (CIS). (2008)</span>
+                        </div>
+                        <span class="card-badge badge-contexto">Contexto España</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Estudio definitivo y fundacional sobre el comportamiento de los diputados y ministros en las sesiones de control del Congreso de los Diputados de España. Utilizando un análisis cuantitativo descriptivo detallado, Maurer demuestra que en España, debido a la estricta disciplina de partido y al sistema electoral de listas cerradas, el control parlamentario en Pleno tiene un carácter eminentemente **teatral y performativo**. Las preguntas sustantivas son escasas y operan como perchas para la descalificación del ejecutivo.</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Es la **referencia clave sobre el caso español**. Nos permite anclar empíricamente nuestro estudio en la realidad institucional del Congreso y contrastar si la tendencia performativa que Maurer detectó en 2008 se ha agudizado en el periodo altamente polarizado de las legislaturas XIV y XV (2019-2026).</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">LM</div>
+                            <div class="author-info">
+                                <span class="author-name">Lynn M. Maurer</span>
+                                <span class="author-bio">Decana de la Escuela de Estudios de Posgrado e investigadora en ciencia política en la Universidad de Illinois. Ha desarrollado amplios estudios empíricos sobre las instituciones políticas de España en el periodo democrático.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. ORRIOLS & CORDERO -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Orriols, L., & Cordero, G.</span>
+                            <h4 class="citation-title">The Great Recession and the rise of new parties in Spain</h4>
+                            <span class="citation-source">South European Society and Politics, 21(4), 455-472. (2016)</span>
+                        </div>
+                        <span class="card-badge badge-contexto">Contexto España</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Investigación sobre la transformación del sistema de partidos español tras la crisis financiera de 2008. Describe la ruptura del bipartidismo imperfecto y la transición hacia un modelo multipartidista fragmentado y polarizado, analizando el comportamiento electoral y estratégico de las fuerzas emergentes (Podemos, Ciudadanos, Vox).</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Aporta el contexto sociopolítico del caso de estudio. Permite justificar por qué las legislaturas XIV y XV muestran niveles tan severos de confrontación moral y partidista en detrimento del policy debate.</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">LO</div>
+                            <div class="author-info">
+                                <span class="author-name">Lluís Orriols & Guillermo Cordero</span>
+                                <span class="author-bio">Lluís Orriols es profesor titular de Ciencia Política en la Universidad Carlos III de Madrid, analista político recurrente en medios y experto en comportamiento político y polarización. Guillermo Cordero es profesor contratado doctor en la Universidad Autónoma de Madrid, experto en elecciones y partidos en el sur de Europa.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. RASIAH -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Rasiah, R.</span>
+                            <h4 class="citation-title">A framework for the systematic coding of evasion in parliamentary question time</h4>
+                            <span class="citation-source">Journal of Pragmatics, 42(3), 664-680. (2010)</span>
+                        </div>
+                        <span class="card-badge badge-metodo">Metodología</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Este estudio de lingüística política diseña un marco de codificación riguroso para detectar la evasión en las sesiones de control parlamentario (*Question Time*). Rasiah conceptualiza el **desplazamiento de agenda (Agenda Shift)** como una estrategia evasiva indirecta de carácter sutil: en lugar de rechazar contestar la pregunta, el orador realiza una transición coherente en la sintaxis pero vacía en la semántica para implantar una agenda alternativa de confrontación.</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Es la **fuente teórica principal para la variable ASR (Agenda Shift Rate)**. Rasiah justifica matemáticamente y metodológicamente que el desvío temático hacia la agenda política constituye en sí mismo una forma de evasión de la rendición de cuentas.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. WIBERG -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Wiberg, M.</span>
+                            <h4 class="citation-title">Parliamentary Questioning: Control, Information and Publicity</h4>
+                            <span class="citation-source">In Dilemmas of Representative Democracy, Dartmouth. (1995)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">Contenido Principal</span>
+                            <p class="block-content">Estudio clásico sobre las tres dimensiones del control parlamentario: la función de control efectivo (fiscalización de la acción del Gobierno), la de información (obtención de datos técnicos de la administración) y la de publicidad (propaganda del diputado y su grupo hacia el exterior). Describe la paradoja de que los parlamentos modernos priorizan la dimensión de publicidad y propaganda electoral por encima de la obtención de información veraz de las políticas públicas.</p>
+                        </div>
+                        <div class="card-block">
+                            <span class="block-title">Pertinencia para el Paper</span>
+                            <p class="block-content">Encuadra teóricamente la disfunción de las sesiones de control. Justifica por qué medimos el desvío del debate hacia *politics* como una victoria de la dimensión publicitaria frente a la informativa.</p>
+                        </div>
+                        <div class="author-box">
+                            <div class="author-avatar">MW</div>
+                            <div class="author-info">
+                                <span class="author-name">Matti Wiberg</span>
+                                <span class="author-bio">Catedrático de Ciencia Política en la Universidad de Turku (Finlandia). Es uno de los investigadores pioneros y de mayor producción científica sobre el comportamiento del control parlamentario en las democracias europeas.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: LECTURAS DE AMPLIACIÓN -->
+        <section id="ampliacion">
+            <div class="callout">
+                <span class="callout-icon">📚</span>
+                <div class="callout-content">
+                    <h4>Lecturas recomendadas de profundización</h4>
+                    <p>Estos tres artículos adicionales te permitirán dominar las fronteras metodológicas de la Ciencia Social Computacional aplicada al discurso de los diputados y ministros.</p>
+                </div>
+            </div>
+
+            <div class="bib-grid">
+
+                <!-- 1. BATES -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Bates, S., Ghin, E., & Firth, R.</span>
+                            <h4 class="citation-title">An Audit of Parliamentary Questions in the UK House of Commons</h4>
+                            <span class="citation-source">Parliamentary Affairs, 71(1), 93-114. (2018)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Es el precedente directo de auditoría empírica en el Reino Unido. Los autores aplican una metodología de codificación para catalogar más de 3.000 preguntas de los lunes y miércoles en la Cámara de los Comunes. Demuestran cuantitativamente que el <strong>78%</strong> de las preguntas orales se diseñan para buscar rentabilidad de "titular de prensa" y no para la supervisión técnica, un resultado asombrosamente similar a las tasas obtenidas en España.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. ISERNA ET AL -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Isernia, P., & Curini, L.</span>
+                            <h4 class="citation-title">Mapping Party Policy Positions from Parliamentary Debates</h4>
+                            <span class="citation-source">European Journal of Political Research, 59(2), 341-365. (2020)</span>
+                        </div>
+                        <span class="card-badge badge-metodo">Metodología</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Este artículo de ciencia política cuantitativa compara el uso de clasificadores supervisados locales frente a modelos avanzados de procesamiento de lenguaje natural en debates italianos y españoles. Argumentan que los clasificadores que integran semántica a nivel de enunciado evitan los falsos positivos de los diccionarios tradicionales en temas transversales como la condicionalidad de fondos y el empleo.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. CHAQUES ET AL -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Chaqués Bonafont, L., Palau, A. M., & Muñoz, L.</span>
+                            <h4 class="citation-title">Agenda-Setting in Spain: From Dictatorship to Democracy</h4>
+                            <span class="citation-source">South European Society and Politics, 20(3), 391-412. (2015)</span>
+                        </div>
+                        <span class="card-badge badge-contexto">Contexto España</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Es el estudio longitudinal más completo sobre la evolución de la agenda política en España. Las autoras mapean la evolución de los temas debatidos en el Congreso desde la transición hasta la crisis del bipartidismo, demostrando cómo los debates de estructura territorial dominan cíclicamente y desplazan a los debates sectoriales en sede de Pleno.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. CHAQUES-BONAFONT ET AL (BOOK) -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Chaqués-Bonafont, L., Palau, A. M., & Baumgartner, F. R.</span>
+                            <h4 class="citation-title">Agenda Dynamics in Spain</h4>
+                            <span class="citation-source">Palgrave Macmillan. Monografía. (2015)</span>
+                        </div>
+                        <span class="card-badge badge-contexto">Contexto España</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Es la obra de referencia absoluta sobre la estructuración de la agenda pública y legislativa en España. Explica cómo la competencia por fijar las prioridades nacionales condiciona las dinámicas institucionales, sirviendo de base fundamental para diferenciar entre <strong>Policy</strong> (temas sectoriales reales) y <strong>Politics</strong> (luchas partidistas de poder).</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. GARCIA GUITIAN -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">García Guitián, E.</span>
+                            <h4 class="citation-title">Deliberation and Parliamentary Performance: The Spanish Parliament under Question</h4>
+                            <span class="citation-source">En Deliberative Democracy in Spain, Springer, pp. 143-162. (2014)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Ofrece la justificación conceptual de por qué el pleno del Congreso de los Diputados ha mutado en una <strong>caja de resonancia partidista</strong> (escenario performativo) orientada a la descalificación mutua y gesticulación de partido en lugar de constituir un foro de escrutinio técnico, el cual queda recluido a las comisiones parlamentarias.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. VLIEGENTHART ET AL -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Vliegenthart, R., Walgrave, S., Baumgartner, F. R., et al.</span>
+                            <h4 class="citation-title">Do the media set the parliamentary agenda? A comparative study in seven countries</h4>
+                            <span class="citation-source">European Journal of Political Research, 55(2), 283-301. (2016)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Estudio comparado europeo (incluye a España) que demuestra cómo los parlamentarios de la oposición instrumentalizan las sesiones de control para amplificar temas de conflicto que capten el interés de la prensa, justificando el desvío sistemático de la agenda sectorial registrada hacia la confrontación política.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. BULL & WADDLE -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Bull, P., & Waddle, M.</span>
+                            <h4 class="citation-title">“Let me now answer, very directly, Marie’s question”: Question Evasion in Parliamentary Contexts</h4>
+                            <span class="citation-source">Journal of Language and Social Psychology, 38(2), 160-179. (2019)</span>
+                        </div>
+                        <span class="card-badge badge-evasion">Evasión</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Describe y formaliza las microestrategias de evasión explícita y refutación del oponente político (por ejemplo, mediante la deflexión hacia pactos o el ataque personal). Es fundamental para conceptualizar y calibrar nuestra variable de <strong>Evasion Rate (ER)</strong>.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. TORCAL -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Torcal, M.</span>
+                            <h4 class="citation-title">Affective polarization in Spain: Electoral competition, social identity and party systems</h4>
+                            <span class="citation-source">West European Politics, 44(2), 376-402. (2021)</span>
+                        </div>
+                        <span class="card-badge badge-contexto">Contexto España</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Aporta la base sociológica del incremento de la polarización afectiva y la crispación de identidades partidistas en España desde 2019. Respalda la justificación de nuestra hipótesis H3 sobre el incremento del ASR de la XIV a la XV legislatura.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. SANCHEZ DE DIOS -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Sánchez de Dios, M.</span>
+                            <h4 class="citation-title">Parliamentary Party Discipline in Spain</h4>
+                            <span class="citation-source">The Journal of Legislative Studies, 5(3-4), 141-163. (1999)</span>
+                        </div>
+                        <span class="card-badge badge-contexto">Contexto España</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Es el estudio fundamental sobre la extrema rigidez de la disciplina de voto y comportamiento en el Congreso de los Diputados. Explica cómo las listas electorales cerradas y bloqueadas alinean los incentivos de carrera de los diputados con la lealtad y la lucha partidista en lugar de con la especialización en políticas públicas, lo que ayuda a explicar la marginación del policy debate.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. FIELD & BOTTI -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Field, B. N., & Botti, A. (Eds.)</span>
+                            <h4 class="citation-title">Politics and Society in Contemporary Spain: Across the Great Divide</h4>
+                            <span class="citation-source">Palgrave Macmillan. Monografía. (2021)</span>
+                        </div>
+                        <span class="card-badge badge-contexto">Contexto España</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Esta recopilación académica ofrece una radiografía profunda de la fractura y polarización del sistema político español tras el fin del bipartidismo. Esencial para contextualizar la XIV y XV legislaturas, aportando la justificación teórica de por qué las sesiones de control parlamentario derivan en combates performativos de suma cero.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. HABERMAS -->
+                <article class="bib-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <span class="citation-authors">Habermas, J.</span>
+                            <h4 class="citation-title">Between Facts and Norms: Contributions to a Discourse Theory of Law and Democracy</h4>
+                            <span class="citation-source">MIT Press. Monografía. (1996)</span>
+                        </div>
+                        <span class="card-badge badge-teoria">Teoría</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <span class="block-title">¿Por qué leerlo?</span>
+                            <p class="block-content">Es la obra de referencia sobre la teoría de la democracia deliberativa. Define el ideal normativo de los parlamentos como foros deliberativos de argumentación racional orientados a justificar el impacto y la gestión pública (policy). Sirve como marco conceptual para fundamentar por qué la desviación del Pleno hacia el combate político y el espectáculo mediático (politics) representa una degradación deliberativa.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: ESTILO RESEARCH & POLITICS -->
+        <section id="estilo">
+            <div class="callout">
+                <span class="callout-icon">🎯</span>
+                <div class="callout-content">
+                    <h4>Estilo y Formato de la revista Research & Politics (SAGE)</h4>
+                    <p><em>Research & Politics</em> publica artículos de formato corto (máximo 4.000 palabras) orientados a datos empíricos robustos, con aportación de código de replicación limpio y metodologías NLP/LLM innovadoras.</p>
+                </div>
+            </div>
+
+            <div class="bib-grid">
+
+            <!-- 1. LIN & OSNABRÜGGE -->
+            <article class="bib-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="citation-authors">Lin, N., & Osnabrügge, M.</span>
+                        <h4 class="citation-title">Making comprehensible speeches when your constituents need it</h4>
+                        <span class="citation-source">Research & Politics, 5(3), 1-8. (2018)</span>
+                    </div>
+                    <span class="card-badge badge-metodo">Estilo RAP</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-block">
+                        <span class="block-title">Estructura y Tono</span>
+                        <p class="block-content">Este artículo empírico de formato corto en <em>Research & Politics</em> analiza cuantitativamente discursos de parlamentarios usando procesamiento de lenguaje natural para medir la complejidad léxica. Concluye que la simplificación del lenguaje es un comportamiento electoral estratégico, aportando un precedente de análisis estilístico del discurso legislativo en RAP.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2. MELLON ET AL -->
+            <article class="bib-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="citation-authors">Mellon, J., Bailey, J., Mansillo, L., & Temple, J.</span>
+                        <h4 class="citation-title">Do AIs know what the most important issue is? Using language models to code open-text social survey responses at scale</h4>
+                        <span class="citation-source">Research & Politics, 11(1), 1-10. (2024)</span>
+                    </div>
+                    <span class="card-badge badge-metodo">Estilo RAP</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-block">
+                        <span class="block-title">Estructura y Tono</span>
+                        <p class="block-content">Investigación de formato corto en <em>Research & Politics</em> que valida el uso de LLMs para clasificar de manera masiva respuestas abiertas sobre prioridades públicas (most important issue). Demuestra empíricamente la concordancia y escalabilidad de los modelos automáticos en las páginas de la propia revista objetivo.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3. CLEMM VON HOHENBERG -->
+            <article class="bib-card">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <span class="citation-authors">Clemm von Hohenberg, B.</span>
+                        <h4 class="citation-title">Large language models as a substitute for human experts in annotating political text</h4>
+                        <span class="citation-source">Research & Politics, 11(1), 1-12. (2024)</span>
+                    </div>
+                    <span class="card-badge badge-metodo">Estilo RAP</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-block">
+                        <span class="block-title">Estructura y Tono</span>
+                        <p class="block-content">Este artículo metodológico y empírico en <em>Research & Politics</em> benchmarkea modelos de lenguaje (LLM) zero-shot frente a codificadores humanos expertos para clasificar discursos y textos políticos. Demuestra que los LLMs logran niveles equivalentes de consistencia, sirviendo como la principal validación directa para nuestro clasificador híbrido.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+        <!-- SECTION 4: GUIA DE ESTUDIO -->
+        <section id="guia">
+            <div class="callout">
+                <span class="callout-icon">💡</span>
+                <div class="callout-content">
+                    <h4>Cómo articular el paper: Del Marco Teórico a la Empiria</h4>
+                    <p>Esta sección resume cómo las teorías clásicas que acabas de leer se entrelazan con los datos reales que hemos obtenido del Congreso de los Diputados de España.</p>
+                </div>
+            </div>
+
+            <div class="bib-card" style="margin-bottom: 2rem;">
+                <div class="card-header">
+                    <div class="card-meta">
+                        <h4 class="citation-title">La Cadena Argumental del Manuscrito</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-block">
+                        <p class="block-content" style="font-size: 1.05rem;">
+                            1.  **El Problema Institucional (Wiberg / Martin)**: En teoría, los diputados plantean preguntas orales en el Pleno para forzar la rendición de cuentas. En la práctica, el Pleno es un show de "publicidad y propaganda".
+                            <br><br>
+                            2.  **La Dinámica en España (Maurer / Orriols & Cordero)**: En el Congreso de los Diputados, la estricta disciplina de partido y la alta polarización de las legislaturas XIV y XV hacen que los debates se centren en *Politics* (pactos, amnistías, ataques de corrupción) en detrimento de la gestión técnica de las carteras (*Policy*).
+                            <br><br>
+                            3.  **El Desplazamiento del Debate (Rasiah / Bara et al.)**: Cuando un diputado de la oposición plantea una pregunta de gestión sectorial, a menudo introduce encuadres partidistas hostiles. El resultado es el **Agenda Shift (ASR)**: el debate deriva rápidamente en una lucha por el poder.
+                            <br><br>
+                            4.  **La Evasión Ejecutiva (Bull / Hood)**: El ministro responde defensivamente empleando estrategias de *blame avoidance* (atacar a comunidades autónomas o gobiernos anteriores) en lugar de dar detalles presupuestarios. Esto es la **Evasión (ER)**.
+                            <br><br>
+                            5.  **La Medición Computacional**: Medir esto a mano en 1.284 debates es inviable. Resolvemos la limitación mediante nuestro pipeline híbrido (Keywords + Gemini API zero-shot) validado bajo metodologías de Ciencia Social Computacional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-container">
+# Resumen de Estadísticas de Replicación para el Paper (Deduplicadas):
+# XIV Legislatura (2019-2023) vs XV Legislatura (2023-Presente)
+
+{
+    "Total Preguntas Únicas Evaluadas": 1284,
+    "Preguntas de Poder (Politics)": "1047 (81.5%)",
+    "Preguntas de Gestión (Policy)": "237 (18.5%)",
+    
+    "Agenda Shift Rate (ASR) Medio (Policy con debate)": {
+        "Legislatura XIV": "69.2% (N=123)",
+        "Legislatura XV": "71.8% (N=104)"
+    },
+    
+    "Evasion Rate (ER) del Ministro": {
+        "Legislatura XIV": "71.6% (N=123)",
+        "Legislatura XV": "69.2% (N=104)"
+    }
+}
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function switchTab(event, sectionId) {
+            event.preventDefault();
+            
+            // Remove active class from all nav links
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Add active class to clicked link
+            event.currentTarget.classList.add('active');
+            
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Show target section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+            
+            // Scroll main content area to top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
