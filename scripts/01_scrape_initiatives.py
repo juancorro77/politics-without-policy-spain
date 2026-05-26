@@ -1,6 +1,7 @@
 import asyncio
 import json
 import os
+import urllib.parse
 from playwright.async_api import async_playwright
 
 async def scrape_legislature(page, leg_num):
@@ -80,7 +81,6 @@ async def scrape_legislature(page, leg_num):
             
             # If ID not found in text, try extracting from URL
             if not init_id and item['href']:
-                import urllib.parse
                 parsed_url = urllib.parse.urlparse(item['href'])
                 q_params = urllib.parse.parse_qs(parsed_url.query)
                 init_id = q_params.get('_iniciativas_id', [None])[0]

@@ -5,12 +5,11 @@ import urllib.request
 import ssl
 import time
 import argparse
+import html
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# Disable SSL verification for urllib
+# Standard secure SSL context for verifying HTTPS certificates of congreso.es
 ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -68,7 +67,6 @@ def process_publication(pub_id, legislature_str):
     url_pub = f"https://www.congreso.es/busqueda-de-publicaciones?p_p_id=publicaciones&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_publicaciones_mode=mostrarTextoIntegro&_publicaciones_legislatura={legislature_str}&_publicaciones_id_texto=({pub_id}.CODI.)"
     pub_html = make_request(url_pub)
     if pub_html:
-        import html
         clean_html = re.sub(r'<script[^>]*?>.*?</script>', '', pub_html, flags=re.DOTALL)
         clean_html = re.sub(r'<style[^>]*?>.*?</style>', '', clean_html, flags=re.DOTALL)
         text = re.sub(r'<[^>]*?>', ' ', clean_html)

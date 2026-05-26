@@ -4,6 +4,12 @@ import re
 import csv
 import argparse
 
+try:
+    import google.generativeai as genai
+    HAS_GENAI = True
+except ImportError:
+    HAS_GENAI = False
+
 # Define dictionary of keywords and patterns for Policy vs Politics
 POLICY_KEYWORDS = [
     # Housing
@@ -165,13 +171,12 @@ def main():
     
     # Check if google-generativeai is installed and key is present
     if api_key:
-        try:
-            import google.generativeai as genai
+        if HAS_GENAI:
             genai.configure(api_key=api_key)
             model = genai.GenerativeModel('gemini-1.5-flash')
             use_llm = True
             print("Clasificador LLM Gemini ACTIVO.")
-        except ImportError:
+        else:
             print("google-generativeai no está instalado. Ejecutando en modo de reglas semánticas avanzadas.")
     else:
         print("Clasificador LLM Gemini INACTIVO (sin API Key). Ejecutando en modo de reglas semánticas avanzadas.")
