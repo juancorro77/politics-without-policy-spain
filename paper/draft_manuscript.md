@@ -1,7 +1,7 @@
 # Politics without Policy? Measuring Agenda Shift and Executive Evasion in the Spanish Congress of Deputies (2019-2026)
 
-**Author:** Juan Corro  
-**Affiliation:** Independent Researcher / Computational Social Science Group  
+**Authors:** María Sarabia & Juan Corro  
+**Affiliation:** Departamento de Economía y Dirección de Empresas, Universidad de Alcalá, Spain  
 **Target Journal:** *Research & Politics* (SAGE)  
 **Replication Repository:** [https://github.com/juancorro77/politics-without-policy-spain](https://github.com/juancorro77/politics-without-policy-spain)
 
