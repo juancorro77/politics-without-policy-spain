@@ -38,3 +38,6 @@ Thumbs.db
 # User configurations
 .env
 .ipynb_checkpoints
+
+# Reference PDFs
+pdf_references/
